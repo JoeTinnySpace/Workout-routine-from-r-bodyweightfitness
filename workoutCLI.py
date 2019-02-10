@@ -88,7 +88,7 @@ def workout():
     while workoutChoice != 0:
         
         if workoutChoice == 1:
-            print(f'\n0. Back \n1. ' + data.workouts.pair1[0].get('name') + '\n2. '+ data.workouts.pair1[1].get('name') +' \n')
+            print(f'\n0. Back \n1. ' + data.workouts.pair1[0].get('name') + ' --> 3 sets of 5-8 reps\n2. '+ data.workouts.pair1[1].get('name') +' --> 3 sets of 5-8 reps\n')
             progChoice = (int)(input(''))
             while progChoice != 0:
                 if progChoice == 1:
@@ -97,10 +97,10 @@ def workout():
                 elif progChoice == 2:
                     progressionPair1(1)
                     pass
-                print(f'\n0. Back \n1. ' + data.workouts.pair1[0].get('name') + '\n2. '+ data.workouts.pair1[1].get('name') +' \n')
+                print(f'\n0. Back \n1. ' + data.workouts.pair1[0].get('name') + ' --> 3 sets of 5-8 reps\n2. '+ data.workouts.pair1[1].get('name') +' --> 3 sets of 5-8 reps\n')
                 progChoice = (int)(input(''))
         elif workoutChoice == 2:
-            print(f'\n0. Back \n1. ' + data.workouts.pair2[0].get('name') + '\n2. '+ data.workouts.pair2[1].get('name') +' \n')
+            print(f'\n0. Back \n1. ' + data.workouts.pair2[0].get('name') + ' --> 3 sets of 5-8 reps\n2. '+ data.workouts.pair2[1].get('name') +' --> 3 sets of 5-8 reps \n')
             progChoice = (int)(input(''))
             while progChoice != 0:
                 if progChoice == 1:
@@ -109,10 +109,10 @@ def workout():
                 elif progChoice == 2:
                     progressionPair2(1)
                     pass
-                print(f'\n0. Back \n1. ' + data.workouts.pair2[0].get('name') + '\n2. '+ data.workouts.pair2[1].get('name') +' \n')
+                print(f'\n0. Back \n1. ' + data.workouts.pair2[0].get('name') + ' --> 3 sets of 5-8 reps\n2. '+ data.workouts.pair2[1].get('name') +' --> 3 sets of 5-8 reps \n')
                 progChoice = (int)(input(''))
         elif workoutChoice == 3:
-            print(f'\n0. Back \n1. ' + data.workouts.pair3[0].get('name') + '\n2. '+ data.workouts.pair3[1].get('name') +' \n')
+            print(f'\n0. Back \n1. ' + data.workouts.pair3[0].get('name') + ' --> 3 sets of 5-8 reps\n2. '+ data.workouts.pair3[1].get('name') +' --> 3 sets of 5-8 reps \n')
             progChoice = (int)(input(''))
             while progChoice != 0:
                 if progChoice == 1:
@@ -124,7 +124,7 @@ def workout():
                 print(f'\n0. Back \n1. ' + data.workouts.pair3[0].get('name') + '\n2. '+ data.workouts.pair3[1].get('name') +' \n')
                 progChoice = (int)(input(''))
         elif workoutChoice == 4:
-            print(f'\n0. Back \n1. ' + data.workouts.pair4[0].get('name') + '\n2. '+ data.workouts.pair4[1].get('name') +' \n3. '+ data.workouts.pair4[2].get('name') +' \n')
+            print(f'\n0. Back \n1. ' + data.workouts.pair4[0].get('name') + ' --> 3 sets of 8-12 reps\n2. '+ data.workouts.pair4[1].get('name') +' --> 3 sets of 8-12 reps \n3. '+ data.workouts.pair4[2].get('name') +' --> 3 sets of 8-12 reps \n')
             progChoice = (int)(input(''))
             while progChoice != 0:
                 if progChoice == 1:
@@ -136,7 +136,7 @@ def workout():
                 elif progChoice == 3:
                     progressionPair4(2)
                     pass
-                print(f'\n0. Back \n1. ' + data.workouts.pair1[0].get('name') + '\n2. '+ data.workouts.pair1[1].get('name') +' \n3. '+ data.workouts.pair4[2].get('name') +' \n')
+                print(f'\n0. Back \n1. ' + data.workouts.pair1[0].get('name') + ' --> 3 sets of 8-12 reps\n2. '+ data.workouts.pair1[1].get('name') +' --> 3 sets of 8-12 reps \n3. '+ data.workouts.pair4[2].get('name') +' --> 3 sets of 8-12 reps \n')
                 progChoice = (int)(input(''))
         elif workoutChoice == 5:
             print(data.workouts.workout.get('instructions') + '\n\n' +
