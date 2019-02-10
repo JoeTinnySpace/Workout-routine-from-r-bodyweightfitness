@@ -82,15 +82,3 @@ class workouts():
 
 goals = ['Strength', 'Muscle Gain ', 'Fat Loss ']
 redditLink = 'https://www.reddit.com/r/bodyweightfitness/wiki/kb/recommended_routine'
-
-# values for lists are 0,1,2 (2 applies only for triple1)
-# sets = workouts.pair1[0].get('sets',{})  
-# reps = workouts.pair1[0].get('reps',{})
-# workout_name = workouts.pair1[0].get('name',{})
-
-# 
-# progressin_name = workouts.pair1[0].get('progressions',{}).get(0,{}).get('prog_name')
-# progressin_desc = workouts.pair1[0].get('progressions',{}).get(0,{}).get('desc')
-# progressin_link = workouts.pair1[0].get('progressions',{}).get(0,{}).get('link')
-
-# print(f'{progressin_name}\n{progressin_link}\n\n{progressin_desc}')
