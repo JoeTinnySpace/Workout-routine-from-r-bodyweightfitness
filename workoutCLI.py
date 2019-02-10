@@ -181,6 +181,6 @@ while mainChoice != 3:
     elif mainChoice == 2:
         workout()
     elif mainChoice == 3:
-        pass
+        print('That\'s it! You\'re done! It\'s over! You did it!')
     else:
         print('Wrong choice...')
