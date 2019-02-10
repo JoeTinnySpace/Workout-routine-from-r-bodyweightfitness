@@ -1,7 +1,5 @@
 from data import data
 
-mainChoice = 0
-
 def warmingUp(x):
     print('\n')
     for key, val in x.items():
@@ -154,10 +152,10 @@ def workout():
         except:
             pass
 
-
-while mainChoice != 3:
+mainChoice = -1
+while mainChoice != 0:
     print('\nSelect from the following list...\n')
-    print('1. Warmup excercises \n2. Workouts \n3. Exit\n')
+    print('0. Exit\n1. Warmup excercises \n2. Workouts \n')
     try:
         mainChoice = (int)(input(''))
     except:
@@ -166,7 +164,7 @@ while mainChoice != 3:
         warmup()
     elif mainChoice == 2:
         workout()
-    elif mainChoice == 3:
+    elif mainChoice == 0:
         print('That\'s it! You\'re done! It\'s over! You did it!')
     else:
         print('Wrong choice...')
