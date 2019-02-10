@@ -11,6 +11,7 @@ cd myworkout
 
 py .\workoutCLI.py
 ```
+Windows executable file is located in folder ```dist```
 
 Feedbacks are appreciated... 
 
