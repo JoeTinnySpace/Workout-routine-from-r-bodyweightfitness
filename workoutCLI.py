@@ -2,6 +2,38 @@ from data import data
 
 mainChoice = 0
 
+def warmingUp(x):
+    print('\n')
+    for key, val in x.items():
+        print(f'{key}  --> {val}')
+    print('Press \'Enter\' to go back to warm up menu\n')
+    input('')
+
+def progressionPair1(x):
+    for key, _ in data.workouts.pair1[x].get('progressions',{}).items():
+        for key1, val1 in data.workouts.pair1[x].get('progressions',{}).get(key,{}).items():
+            print(key1 + ' >> ' + val1)
+        print('\n')
+
+def progressionPair2(x):
+    for key, _ in data.workouts.pair2[x].get('progressions',{}).items():
+        for key1, val1 in data.workouts.pair2[x].get('progressions',{}).get(key,{}).items():
+            print(key1 + ' >> ' + val1)
+        print('\n')
+
+def progressionPair3(x):
+    for key, _ in data.workouts.pair3[x].get('progressions',{}).items():
+        for key1, val1 in data.workouts.pair3[x].get('progressions',{}).get(key,{}).items():
+            print(key1 + ' >> ' + val1)
+        print('\n')
+
+def progressionPair4(x):
+    for key, _ in data.workouts.pair4[x].get('progressions',{}).items():
+        for key1, val1 in data.workouts.pair4[x].get('progressions',{}).get(key,{}).items():
+            print(key1 + ' >> ' + val1)
+        print('\n')
+
+
 def warmup():
     ex1name = data.warmups.excercise1.get('name')
     ex2name = data.warmups.excercise2.get('name')
@@ -17,46 +49,25 @@ def warmup():
         print('Only digits(0-7) allowed!')
     while warmChoice != 0:
         if warmChoice == 1:
-            for key, val in data.warmups.excercise1.items():
-                print(f'{key}  --> {val} \n')
-            print('Press \'Enter\' to go back to warm up menu\n')
-            input('')
+            warmingUp(data.warmups.excercise1)
             pass
         elif warmChoice == 2:
-            for key, val in data.warmups.excercise2.items():
-                print(f'{key}  --> {val} \n')
-            print('Press \'Enter\' to go back to warm up menu\n')
-            input('')
+            warmingUp(data.warmups.excercise2)
             pass
         elif warmChoice == 3:
-            for key, val in data.warmups.excercise3.items():
-                print(f'{key}  --> {val} \n')
-            print('Press \'Enter\' to go back to warm up menu\n')
-            input('')
+            warmingUp(data.warmups.excercise3)
             pass
         elif warmChoice == 4:
-            for key, val in data.warmups.excercise4.items():
-                print(f'{key}  --> {val} \n')
-            print('Press \'Enter\' to go back to warm up menu\n')
-            input('')
+            warmingUp(data.warmups.excercise4)
             pass
         elif warmChoice == 5:
-            for key, val in data.warmups.excercise5.items():
-                print(f'{key}  --> {val} \n')
-            print('Press \'Enter\' to go back to warm up menu\n')
-            input('')
+            warmingUp(data.warmups.excercise5)
             pass
         elif warmChoice == 6:
-            for key, val in data.warmups.excercise6.items():
-                print(f'{key}  --> {val} \n')
-            print('Press \'Enter\' to go back to warm up menu\n')
-            input('')
+            warmingUp(data.warmups.excercise6)
             pass
         elif warmChoice == 7:
-            for key, val in data.warmups.excercise7.items():
-                print(f'{key}  --> {val} \n')
-            print('Press \'Enter\' to go back to warm up menu\n')
-            input('')
+            warmingUp(data.warmups.excercise7)
             pass
         else:
             print('Okay. I get it... Your forarms are pumped. But you must press the right key bud!\n')
@@ -142,31 +153,6 @@ def workout():
             workoutChoice = (int)(input(''))
         except:
             pass
-
-def progressionPair1(x):
-    for key, _ in data.workouts.pair1[x].get('progressions',{}).items():
-        for key1, val1 in data.workouts.pair1[x].get('progressions',{}).get(key,{}).items():
-            print(key1 + ' >> ' + val1)
-        print('\n')
-
-def progressionPair2(x):
-    for key, _ in data.workouts.pair2[x].get('progressions',{}).items():
-        for key1, val1 in data.workouts.pair2[x].get('progressions',{}).get(key,{}).items():
-            print(key1 + ' >> ' + val1)
-        print('\n')
-
-def progressionPair3(x):
-    for key, _ in data.workouts.pair3[x].get('progressions',{}).items():
-        for key1, val1 in data.workouts.pair3[x].get('progressions',{}).get(key,{}).items():
-            print(key1 + ' >> ' + val1)
-        print('\n')
-
-def progressionPair4(x):
-    for key, _ in data.workouts.pair4[x].get('progressions',{}).items():
-        for key1, val1 in data.workouts.pair4[x].get('progressions',{}).get(key,{}).items():
-            print(key1 + ' >> ' + val1)
-        print('\n')
-
 
 
 while mainChoice != 3:
